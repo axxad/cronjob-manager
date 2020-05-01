@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 dag = DAG(
     'test_dag',
     start_date=datetime.today() - timedelta(days=1),
-    schedule_interval="0 1 * * *"
+    schedule_interval="*/15 * * * *"
 )
 
 t1 = BashOperator(
