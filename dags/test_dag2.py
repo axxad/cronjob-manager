@@ -5,7 +5,7 @@ import datetime as dt
 
 
 dag = DAG(
-    'test_dag',
+    'test_dag_2',
     start_date=dt.datetime(2020, 1, 12, 18, 29, 00),
     schedule_interval="*/15 * * * *"
 )
